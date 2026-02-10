@@ -14,7 +14,7 @@ def send_showDoc(content):
         print("警告: ShowDoc Key 未设置，跳过发送通知。")
         return
     
-    url = "https://push.showdoc.com.cn/server/api/push/{SHOWDOC_KEY}"
+    url = f"https://push.showdoc.com.cn/server/api/push/{SHOWDOC_KEY}"
     payload = {
         "title": "DNSHE 域名自动续期报告",
         "content": content,
